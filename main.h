@@ -62,7 +62,8 @@ void free_one(char *str);
 int shell_execute(char *shell_name, int line, char **args, char **env);
 void error_print(char *shell_name, char *cmd_name, int line, char *str);
 void exit_call(char *shell_name, int line, char *str, int call);
-void exit_feof(char *old, char *curr, char *lineptr, char *path_line, int flag);
+void exit_feof(char *old, char *curr, char *lineptr,
+		char *path_line,int flag);
 char *getenv_val(char *string, char **env);
 int chg_dir(char *shell_name, char *cmd_name, int line, char *ptr);
 void check_prev_cmd(char *curr, char **n, char *old, char **env);
