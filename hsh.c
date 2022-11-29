@@ -19,12 +19,10 @@ int main(int ac, char **av, char **env)
 	}
 	if (isatty(STDIN_FILENO) == 0)
 	{
-		printf("non-iterative\n");
 		shell_routine_noniter(av[0], env);
 	}
 	else
 	{
-		printf("iterative\n");
 		shell_routine(av[0], env);
 	}
 
